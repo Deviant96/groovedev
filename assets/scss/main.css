@@ -1,0 +1,750 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-moz-selection {
+  background-color: #008080;
+  color: #edf2f7;
+}
+
+::selection {
+  background-color: #008080;
+  color: #edf2f7;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  -webkit-transition: background .2s linear;
+  transition: background .2s linear;
+  line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Sora", sans-serif;
+  margin-bottom: 1.8rem;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.heading-one {
+  font-size: 60px;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+.heading-two {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.6em;
+  font-size: 16px;
+  line-height: 1.857;
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: #008080;
+}
+
+.btn,
+button,
+input[type="button"],
+input[type="submit"],
+textarea {
+  line-height: 1.85714285714286;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 0;
+  overflow: hidden;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.btn__cta {
+  padding: 12px 30px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.2);
+  font-family: "Sora", Sans-serif;
+  font-weight: bold;
+  color: #008080;
+}
+
+.btn__cta:hover {
+  color: #f9f9f9;
+  background: #055a5a;
+  -webkit-box-shadow: 0px 1px 12px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 12px 1px rgba(0, 0, 0, 0.1);
+}
+
+.btn__link {
+  border: none;
+  font-weight: 600;
+  color: #008080;
+  text-align: center;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.btn__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+
+.btn__inner:hover i {
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+}
+
+.btn i {
+  padding-bottom: 3px;
+  margin-left: 11px;
+}
+
+.contact-social a.btn-social,
+.contact-social .btn-social {
+  display: unset;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 1.5em;
+}
+
+.contact-email > a,
+.contact-social > a {
+  color: #fafafa;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.navbar__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 25px;
+          column-gap: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo {
+  max-width: 200px;
+  height: 100%;
+}
+
+.navbar__logo > a {
+  /*margin: 0;*/
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+}
+
+.navbar__logo img {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section h2 {
+  color: #A0AEC0;
+}
+
+.intro,
+.about,
+.projects,
+.works {
+  min-height: calc(100vh - 200px);
+}
+
+.about .heading-one,
+.about .heading-two,
+.projects .heading-one,
+.projects .heading-two,
+.works .heading-one,
+.works .heading-two {
+  color: #2d3748;
+}
+
+.projects .container,
+.works .container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.projects .section-text,
+.works .section-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+
+.projects .section-image,
+.works .section-image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.projects .section-image__image-wrap,
+.works .section-image__image-wrap {
+  height: 570px;
+}
+
+.projects .section-image__image-wrap img,
+.works .section-image__image-wrap img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 16px;
+  height: 100%;
+}
+
+.intro,
+.cta {
+  background-color: #00283D;
+  color: #edf2f7;
+}
+
+.cta {
+  min-height: calc(50vh);
+  text-align: center;
+}
+
+footer {
+  background-color: #eeeeee;
+}
+
+footer .copy {
+  padding: 40px 0;
+  text-align: center;
+}
+
+a.btn-social,
+.btn-social {
+  border-radius: 50%;
+  color: #ffffff !important;
+  display: inline-block;
+  height: 54px;
+  line-height: 54px;
+  margin: 8px 4px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  width: 54px;
+}
+
+.btn-social .fa,
+.btn-social i {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.btn-social:hover,
+.btn-social:focus {
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-social:hover .fa,
+.btn-social:focus .fa,
+.btn-social:hover i,
+.btn-social:focus i {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.btn-social.btn-xs {
+  font-size: 9px;
+  height: 24px;
+  line-height: 13px;
+  margin: 6px 2px;
+  width: 24px;
+}
+
+.btn-social.btn-sm {
+  font-size: 13px;
+  height: 36px;
+  line-height: 18px;
+  margin: 6px 2px;
+  width: 36px;
+}
+
+.btn-social.btn-lg {
+  font-size: 22px;
+  height: 72px;
+  line-height: 40px;
+  margin: 10px 6px;
+  width: 72px;
+}
+
+.btn-behance {
+  background-color: #1769ff;
+}
+
+.btn-behance:hover {
+  background-color: #4a8aff;
+}
+
+.btn-bitbucket {
+  background-color: #205081;
+}
+
+.btn-bitbucket:hover {
+  background-color: #2a69aa;
+}
+
+.btn-codepen {
+  background-color: #76daff;
+}
+
+.btn-codepen:hover {
+  background-color: #a9e8ff;
+}
+
+.btn-deviantart {
+  background-color: #4e6252;
+}
+
+.btn-deviantart:hover {
+  background-color: #657e6a;
+}
+
+.btn-digg {
+  background-color: #000;
+}
+
+.btn-digg:hover {
+  background-color: #1a1a1a;
+}
+
+.btn-dribbble {
+  background-color: #ea4c89;
+}
+
+.btn-dribbble:hover {
+  background-color: #ef7aa7;
+}
+
+.btn-dropbox {
+  background-color: #007ee5;
+}
+
+.btn-dropbox:hover {
+  background-color: #1998ff;
+}
+
+.btn-facebook {
+  background-color: #3b5998;
+}
+
+.btn-facebook:hover {
+  background-color: #4c70ba;
+}
+
+.btn-flickr {
+  background-color: #0063dc;
+}
+
+.btn-flickr:hover {
+  background-color: #107cff;
+}
+
+.btn-foursquare {
+  background-color: #ef4b78;
+}
+
+.btn-foursquare:hover {
+  background-color: #f37a9b;
+}
+
+.btn-github {
+  background-color: #4183c4;
+}
+
+.btn-github:hover {
+  background-color: #689cd0;
+}
+
+.btn-google-plus {
+  background-color: #dd4b39;
+}
+
+.btn-google-plus:hover {
+  background-color: #e47365;
+}
+
+.btn-instagram {
+  background-color: #3f729b;
+}
+
+.btn-instagram:hover {
+  background-color: #548cb9;
+}
+
+.btn-jsfiddle {
+  background-color: #4679bd;
+}
+
+.btn-jsfiddle:hover {
+  background-color: #6c94ca;
+}
+
+.btn-lastfm {
+  background-color: #e31b23;
+}
+
+.btn-lastfm:hover {
+  background-color: #e9484e;
+}
+
+.btn-linkedin {
+  background-color: #0976b4;
+}
+
+.btn-linkedin:hover {
+  background-color: #0b96e5;
+}
+
+.btn-paypal {
+  background-color: #253b80;
+}
+
+.btn-paypal:hover {
+  background-color: #304da8;
+}
+
+.btn-pinterest {
+  background-color: #cc2127;
+}
+
+.btn-pinterest:hover {
+  background-color: #e04046;
+}
+
+.btn-reddit {
+  background-color: #ff4500;
+}
+
+.btn-reddit:hover {
+  background-color: #ff6a33;
+}
+
+.btn-skype {
+  background-color: #00aff0;
+}
+
+.btn-skype:hover {
+  background-color: #24c4ff;
+}
+
+.btn-soundcloud {
+  background-color: #f80;
+}
+
+.btn-soundcloud:hover {
+  background-color: #ffa033;
+}
+
+.btn-stack-overflow {
+  background-color: #fe7a15;
+}
+
+.btn-stack-overflow:hover {
+  background-color: #fe9748;
+}
+
+.btn-steam {
+  background-color: #7da10e;
+}
+
+.btn-steam:hover {
+  background-color: #a1d012;
+}
+
+.btn-stumbleupon {
+  background-color: #eb4924;
+}
+
+.btn-stumbleupon:hover {
+  background-color: #ef7053;
+}
+
+.btn-trello {
+  background-color: #256a92;
+}
+
+.btn-trello:hover {
+  background-color: #2f88bb;
+}
+
+.btn-tumblr {
+  background-color: #35465c;
+}
+
+.btn-tumblr:hover {
+  background-color: #485f7c;
+}
+
+.btn-twitch {
+  background-color: #6441a5;
+}
+
+.btn-twitch:hover {
+  background-color: #7e5bbe;
+}
+
+.btn-twitter {
+  background-color: #55acee;
+}
+
+.btn-twitter:hover {
+  background-color: #83c3f3;
+}
+
+.btn-vimeo {
+  background-color: #1ab7ea;
+}
+
+.btn-vimeo:hover {
+  background-color: #49c6ee;
+}
+
+.btn-vine {
+  background-color: #00b488;
+}
+
+.btn-vine:hover {
+  background-color: #00e7af;
+}
+
+.btn-vk {
+  background-color: #45668e;
+}
+
+.btn-vk:hover {
+  background-color: #587fae;
+}
+
+.btn-wechat {
+  background-color: #98d11c;
+}
+
+.btn-wechat:hover {
+  background-color: #afe53b;
+}
+
+.btn-wordpress {
+  background-color: #21759b;
+}
+
+.btn-wordpress:hover {
+  background-color: #2a95c5;
+}
+
+.btn-xing {
+  background-color: #026466;
+}
+
+.btn-xing:hover {
+  background-color: #039598;
+}
+
+.btn-yahoo {
+  background-color: #400191;
+}
+
+.btn-yahoo:hover {
+  background-color: #5601c4;
+}
+
+.btn-yelp {
+  background-color: #af0606;
+}
+
+.btn-yelp:hover {
+  background-color: #e00808;
+}
+
+.btn-youtube {
+  background-color: #e52d27;
+}
+
+.btn-youtube:hover {
+  background-color: #ea5955;
+}
+
+.btn-email {
+  background-color: #44c456;
+}
+
+.btn-email:hover {
+  background-color: #6bd079;
+}
+
+.navbar li a,
+.navbar .navbar-brand {
+  color: #000;
+}
+/*# sourceMappingURL=main.css.map */
