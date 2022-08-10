@@ -1,135 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build your next website with us - Groove Dev</title>
 
-  <title>Build your next website with us - Groove Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="assets/scss/main.css" rel="stylesheet" />
 
-  <link href="assets/scss/main.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-</head>
-
-<body>
-  <header>
-    <nav class="navbar">
-      <ul class="navbar__menu">
-        <li class="menu-item">
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navbar__menu">
+          <!-- <li class="menu-item">
           <a class="nav-link" href="https://groovedev.id">About</a>
-        </li>
-        <li class="menu-item">
-          <a class="nav-link" href="https://groovedev.id/work.html">Work</a>
-        </li>
-        <!--<li class="menu-item">-->
-        <!--  <a class="nav-link" href="https://miretazam.com/contact/">Contact</a>-->
-        <!--</li>-->
-      </ul>
-      <div class="navbar__logo">
-        <a href="https://groovedev.id">
-          <img class="navbar__logo-image" src="assets/imgs/Logo-XSmall.png" alt="" />
-        </a>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <section id="intro" class="intro">
-      <div class="container">
-        <div class="section-text">
-          <h2>Riddin by Chamillionaire,</h2>
-          <p class="heading-one">
-            We create digital home for your business.
-          </p>
-          <a class="btn btn__primary btn__primary--intro" href="https://wa.me/628811773454" target="_blank">Let's Discuss</a>
-        </div>
-        <div class="section-image">
-          <div class="section-image__image-wrap">
-            <img src="assets/imgs/seo.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <h2>What We Do</h2>
-        <p class="heading-two">
-          We design and build website since 2020. We run a full product
-          lifecycle from planning and idea evaluation to implementation.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="section-text">
-          <h2>What We Do</h2>
-          <h3 class="heading-two">Name Project Here</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac sit praesent imperdiet consectetur. Commodo
-            velit lectus cum quam nunc, habitase.
-          </p>
-          <a class="btn btn__link" href="www.groovedev.id">
-            <div class="btn__inner">
-              <span>View Projects</span>
-              <i aria-hidden="true" class="fa fa-arrow-right"></i>
-            </div>
+        </li> -->
+          <li class="menu-item">
+            <a class="nav-link" href="/work.html">Work</a>
+          </li>
+          <!--<li class="menu-item">-->
+          <!--  <a class="nav-link" href="https://miretazam.com/contact/">Contact</a>-->
+          <!--</li>-->
+        </ul>
+        <div class="navbar__logo">
+          <a href="https://groovedev.id">
+            <img
+              class="navbar__logo-image"
+              src="assets/imgs/Logo-XSmall.png"
+              alt=""
+            />
           </a>
         </div>
-        <div class="section-image">
-          <div class="section-image__image-wrap">
-            <img src="assets/imgs/home_project.jpg" alt="">
+      </nav>
+    </header>
+
+    <main>
+      <section id="intro" class="intro">
+        <div class="bg-wrap">
+          <div class="bg-wrap__image">
+            <img src="assets/imgs/reload.png" alt="" />
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="works" class="works">
-      <div class="container">
-        <div class="section-text">
-          <h2>Project Type</h2>
-          <h3 class="heading-two">Name Project Here</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac sit praesent imperdiet consectetur. Commodo
-            velit lectus cum quam nunc, habitase.
-          </p>
-          <a class="btn btn__link" href="www.groovedev.id">
-            <div class="btn__inner">
-              <span>View Projects</span>
-              <i aria-hidden="true" class="fa fa-arrow-right"></i>
+        <div class="container">
+          <div class="section-text">
+            <h2>Solusi digital</h2>
+            <p class="heading-one">Berikan rumah digital untuk bisnis Anda</p>
+            <a
+              class="btn btn__primary btn__primary--intro"
+              href="https://wa.me/628811773454"
+              target="_blank"
+              >Mari berdiskusi</a
+            >
+          </div>
+          <div class="section-image">
+            <div class="section-image__image-wrap">
+              <img src="assets/imgs/seo.svg" alt="" />
             </div>
-          </a>
-        </div>
-        <div class="section-image">
-          <div class="section-image__image-wrap">
-            <img src="assets/imgs/home_work.jpg" alt="">
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="cta" class="cta">
-      <div class="container">
-        <h2>Get Started With Us</h2>
-        <p class="heading-two">Contact us via WhatsApp</p>
-        <a class="btn btn__primary btn__primary--cta" href="https://wa.me/628811773454" target="_blank">Let's get to work</a>
-      </div>
-    </section>
-  </main>
+      <section id="about" class="about">
+        <div class="container">
+          <h2>Apa Yang Kami Lakukan</h2>
+          <p class="heading-two">
+            Kami merancang dan mengembangkan produk digital dan menghadirkan
+            pengalaman yang membantu klien kami untuk tumbuh, berinovasi, dan
+            bertransformasi.
+          </p>
+        </div>
+      </section>
 
-  <footer>
-    <div class="container">
+      <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-text">
+            <h2>Yang kami berikan</h2>
+            <h3 class="heading-two">
+              Perencanaan dan evaluasi ide hingga implementasi
+            </h3>
+            <p>
+              Merancang dan mengembangkan situs web yang membantu bisnis Anda
+              tumbuh.
+            </p>
+            <a class="btn btn__link" href="www.groovedev.id">
+              <div class="btn__inner">
+                <span>Lihat proyek</span>
+                <i aria-hidden="true" class="fa fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+          <div class="section-image">
+            <div class="section-image__image-wrap">
+              <img src="assets/imgs/home_project.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="works" class="works">
+        <div class="container">
+          <div class="section-text">
+            <h2>Tingkatkan kehadiran digital bisnis Anda</h2>
+            <h3 class="heading-two">
+              Desain visual yang menarik dan desain sistem yang skalabel
+            </h3>
+            <p>
+              Ketika berbicara tentang pengalaman digital, kita dapat membangun
+              hampir semua hal. Dan jika ada solusi yang lebih baik, kami akan
+              memberi tahu Anda. Kami selalu memulai dengan: Mengapa? dan
+              gunakan jawabannya untuk mendorong pertumbuhan nyata dan
+              transformasi yang berarti
+            </p>
+            <a class="btn btn__link" href="www.groovedev.id">
+              <div class="btn__inner">
+                <span>Lihat proyek</span>
+                <i aria-hidden="true" class="fa fa-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+          <div class="section-image" style="position: relative">
+            <!-- <img src="assets/imgs/home_work.jpg" alt=""> -->
+            <div class="slider-container">
+              <div class="inner-slider">
+                <div class="card">
+                  <img src="assets/imgs/showcase/showcase1.png" alt="" />
+                </div>
+                <div class="card">
+                  <img src="assets/imgs/showcase/showcase2.png" alt="" />
+                </div>
+                <div class="card">
+                  <img src="assets/imgs/showcase/showcase3.png" alt="" />
+                </div>
+                <div class="card">
+                  <img src="assets/imgs/showcase/showcase4.png" alt="" />
+                </div>
+                <div class="card">
+                  <img src="assets/imgs/showcase/showcase5.png" alt="" />
+                </div>
+                <div class="card">
+                  <img src="assets/imgs/showcase/showcase6.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="cta">
+        <div class="container">
+          <h2>Mulai Dengan Kami</h2>
+          <p class="heading-two">Hubungi kami via WhatsApp</p>
+          <a
+            class="btn btn__primary btn__primary--cta"
+            href="https://wa.me/628811773454"
+            target="_blank"
+            >Mulai sekarang</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer>
       <div class="copy">
         <small>Copyright Groove Dev &copy; 2022</small>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
 
+    <script>
+      let sliderContainer = document.querySelector(".slider-container");
+      let innerSlider = document.querySelector(".inner-slider");
+
+      let pressed = false;
+      let startX;
+      let x;
+
+      sliderContainer.addEventListener("mousedown", (e) => {
+        pressed = true;
+        startX = e.offsetX - innerSlider.offsetLeft;
+        sliderContainer.style.cursor = "grabbing";
+      });
+
+      sliderContainer.addEventListener("mouseenter", () => {
+        sliderContainer.style.cursor = "grab";
+      });
+
+      sliderContainer.addEventListener("mouseup", () => {
+        sliderContainer.style.cursor = "grab";
+        pressed = false;
+      });
+
+      sliderContainer.addEventListener("mousemove", (e) => {
+        if (!pressed) return;
+        e.preventDefault();
+
+        x = e.offsetX;
+
+        innerSlider.style.left = `${x - startX}px`;
+
+        checkBoundary();
+      });
+
+      const checkBoundary = () => {
+        let outer = sliderContainer.getBoundingClientRect();
+        let inner = innerSlider.getBoundingClientRect();
+
+        if (parseInt(innerSlider.style.left) > 0) {
+          innerSlider.style.left = "0px";
+        }
+
+        if (inner.right < outer.right) {
+          innerSlider.style.left = `-${inner.width - outer.width}px`;
+        }
+      };
+    </script>
+  </body>
 </html>

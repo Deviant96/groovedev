@@ -3,6 +3,7 @@
     margin: 0 auto;
     align-self: center;
     width: 100%;
+    z-index: $container-zindex;
 
     display: flex;
     flex-direction: column;
@@ -11,7 +12,10 @@
 // Navigation
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    user-select: none;
+    max-width: $container-lg;
+    margin: 0 auto;
 
     &__menu {
         display: flex;
@@ -39,6 +43,28 @@
     }
 }
 
+.bg-wrap {
+    z-index: $bgwrap-zindex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+
+        animation: rotating-loader 9s infinite linear;
+    }
+
+    img {
+        transform: scale(1.5);
+        opacity: .2;
+    }
+}
+
 section {
     display: flex;
 
@@ -47,15 +73,10 @@ section {
     }
 }
 
-.intro,
-.projects,
-.works {
-    min-height: 90vh;
-}
-
 .about,
 .projects,
 .works {
+
     .heading-one,
     .heading-two {
         color: $text-color-headings;
@@ -65,6 +86,8 @@ section {
 .projects,
 .works,
 .intro {
+    min-height: 50vh;
+
     .container {
         flex-direction: row;
     }
@@ -74,6 +97,8 @@ section {
         display: flex;
         justify-content: center;
         flex-flow: column wrap;
+
+        padding-right: 5rem;
     }
 
     .section-image {
@@ -97,21 +122,57 @@ section {
     color: $text-light;
 }
 
-.intro {}
+.intro {
+    padding: 120px 0;
+}
 
-.about,
+.about {
+    z-index: $section-about-zindex;
+    position: relative;
+    background: #fff;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
 .cta {
     min-height: calc(50vh);
     text-align: center;
 }
 
+.projects, .works {
+    padding: 80px 0;
+}
+
+
 footer {
     background-color: $footer-bg-color;
+    padding: 0;
 
     .copy {
         padding: 40px 0;
 
         text-align: center;
+    }
+}
+
+.Section__backgroundMask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+
+    .Section__background {
+        position: relative;
+        height: 100%;
+        max-height: none;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform-origin: 100% 0;
+        transform: skewY(-6deg);
+        background: $color-third;
+        overflow: hidden;
     }
 }
 
