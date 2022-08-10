@@ -182,3 +182,21 @@ footer {
         padding: 0 24px;
     }
 }
+
+.work {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+
+    >div {
+        width: calc(33.33% - 2em);
+    }
+
+    @media(max-width: 480px) {
+        >div {
+            width: calc(50% - 2em);
+        }
+    }
+}

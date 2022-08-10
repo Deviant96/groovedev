@@ -139,3 +139,82 @@
         }
     }
 }
+
+.portfolio-card {
+    border: 5px dashed #e9c46a;
+    border-radius: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    transition: all .2s ease;
+
+    &:hover {
+        border-style: solid;
+        transform: scale(1.1);
+        color: #000
+    }
+
+    &__title, &__tech {
+        margin-top: 10px;
+    }
+
+    &__title {
+        display: flex;
+        column-gap: 10px;
+        justify-content: space-between;
+
+        h2 {
+            margin-bottom: 0;
+            align-self: flex-end;
+            font-size: 1.5em;
+
+            
+        }
+        
+        a {
+            align-self: flex-end;
+            min-width: fit-content
+        }
+    }
+
+    &__image {
+        max-height: 120px;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            width: auto;
+        }
+    }
+
+    &__tech {
+        display: flex;
+        flex-flow: row wrap;
+        gap: .3em;
+
+        >span {
+            font-size: .6em;
+            color: #646464;
+            padding: .5em;
+            background: #c8c8c8;
+            border-radius: 20px;
+            transition: transform .2s ease;
+
+            &:hover {
+                transform: scale(1.5);
+                color: #323232;
+                font-size: .7em;
+            }
+        }
+    }
+
+    @media(max-width: 480px) {
+        &__title h2 {
+            font-size: 1.1em;
+        }
+    }
+}
