@@ -48,16 +48,14 @@ section {
 }
 
 .intro,
-.about,
 .projects,
 .works {
-    min-height: calc(100vh - 200px);
+    min-height: 90vh;
 }
 
 .about,
 .projects,
 .works {
-
     .heading-one,
     .heading-two {
         color: $text-color-headings;
@@ -65,7 +63,8 @@ section {
 }
 
 .projects,
-.works {
+.works,
+.intro {
     .container {
         flex-direction: row;
     }
@@ -100,6 +99,7 @@ section {
 
 .intro {}
 
+.about,
 .cta {
     min-height: calc(50vh);
     text-align: center;
@@ -112,5 +112,12 @@ footer {
         padding: 40px 0;
 
         text-align: center;
+    }
+}
+
+@media (max-width:760px) {
+    .container {
+        max-width: $container-s;
+        padding: 0 24px;
     }
 }
