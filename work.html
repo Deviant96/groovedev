@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-F6P8VPXNEG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-F6P8VPXNEG");
+    </script>
+    <!-- Google tag (gtag.js) END -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -15,49 +31,47 @@
 
     <link href="assets/scss/main.css" rel="stylesheet" />
 
+    <style></style>
+
     <style>
+      .portfolio-card {
+        border: 1px solid #66666636;
+        border-radius: 15px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #fff;
+        transition: all 0.2s ease;
+        box-shadow: rgba(213, 213, 213, 0.8) 0px 0px 10px 1px;
+        overflow: hidden;
+      }
+      .portfolio-card__content {
+        padding: 15px;
+      }
+
+      .portfolio-card__tech > span {
+        font-size: 0.6em;
+        color: #a4a4a4;
+        padding: 0.5em;
+        background: #fff;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+        border: 1px rgb(230, 230, 230) solid;
+      }
+
+      .portfolio-card__title h2 {
+        font-size: 1.1em;
+      }
+
+      footer {
+        padding: 30px 0;
+        margin: 30px auto 0;
+        text-align: center;
+      }
     </style>
-    
-    <style>
-        .portfolio-card {
-          border: 1px solid #66666636;
-          border-radius: 15px;
-          padding: 0;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          background-color: #fff;
-          transition: all .2s ease;
-          box-shadow: rgba(213, 213, 213, 0.8) 0px 0px 10px 1px;
-          overflow: hidden;
-        }
-        .portfolio-card__content {
-  padding: 15px;
-}
 
-.portfolio-card__tech > span {
-  font-size: .6em;
-  color: #a4a4a4;
-  padding: .5em;
-  background: #fff;
-  border-radius: 8px;
-  transition: transform .2s ease;
-  border: 1px rgb(230,230,230) solid;
-}
-
-.portfolio-card__title h2 {
-  font-size: 1.1em;
-}
-
-footer {
-  padding: 30px 0;
-  margin: 30px auto 0;
-  text-align: center;
-}
-    </style>
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -84,11 +98,10 @@ footer {
         </div>
       </nav>
     </header>
-    
-    <main>
 
-    <section>
-      <div class="container work">
+    <main>
+      <section>
+        <div class="container work">
           <!-- Virya Group -->
           <div class="portfolio-card">
             <div class="portfolio-card__image">
@@ -174,24 +187,28 @@ footer {
           <!-- E-legal -->
           <div class="portfolio-card">
             <div class="portfolio-card__image">
-              <figure class="figure image" style="background:#000;width:100%;height:100;">
-                <img
-                  class=""
-                  alt="E-Legal"
-                />
+              <figure
+                class="figure image"
+                style="background: #000; width: 100%; height: 100"
+              >
+                <img class="" alt="E-Legal" />
               </figure>
             </div>
             <div class="portfolio-card__content">
-            <div class="portfolio-card__tech">
-              <span>Wordpress</span>
-              <span>PHP</span>
-            </div>
-            <div class="portfolio-card__title">
-              <h2>E-Legal</h2>
-              <a class="portfolio-card__link" href="https://elegal.co.id" target="_blank">
-                <i class="fa fa-link" aria-hidden="true"></i> Kunjungi
-              </a>
-            </div>
+              <div class="portfolio-card__tech">
+                <span>Wordpress</span>
+                <span>PHP</span>
+              </div>
+              <div class="portfolio-card__title">
+                <h2>E-Legal</h2>
+                <a
+                  class="portfolio-card__link"
+                  href="https://elegal.co.id"
+                  target="_blank"
+                >
+                  <i class="fa fa-link" aria-hidden="true"></i> Kunjungi
+                </a>
+              </div>
             </div>
           </div>
 
@@ -328,11 +345,10 @@ footer {
               </div>
             </div>
           </div>
-
-      </div>
-    </section>
+        </div>
+      </section>
     </main>
-    
+
     <footer><small>Copyright Groove Dev &copy; 2022</small></footer>
   </body>
 </html>
