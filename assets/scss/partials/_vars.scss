@@ -27,3 +27,19 @@ $bgwrap-zindex: 1;
 $container-zindex : 2;
 $button-zindex: 3;
 $section-about-zindex: 2;
+
+
+
+
+
+
+
+// ---- Mixins
+@mixin hide-on-mobile {
+    display: none;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    top: -99999999px;
+    left: 0;
+}
