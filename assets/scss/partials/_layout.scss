@@ -155,6 +155,10 @@ section {
             flex-direction: column;
         }
 
+        .section-text {
+            padding: 0;
+        }
+
         .section-image {
     
             &__image-wrap {

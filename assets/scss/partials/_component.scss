@@ -136,6 +136,24 @@
             border-radius: 9px;
         }
     }
+
+    @media(max-width: 480px) {
+        position: relative;
+        width: auto;
+        overflow: scroll;
+        height: 250px;
+
+        .inner-slider {
+    
+            .card {
+            }
+    
+            img {
+                width: 240px;
+                max-height: 250px;
+            }
+        }
+    }
 }
 
 .portfolio-card {
